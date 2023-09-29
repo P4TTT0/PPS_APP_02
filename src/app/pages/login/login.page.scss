@@ -1,0 +1,119 @@
+*
+{
+    color: #2A2C24;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+ion-content
+{
+    --background: #FFD4F3
+}
+
+.container
+{
+    padding: 0px 20px;
+}
+
+p
+{
+    text-align: center;
+    color: #616456;
+}
+
+.title-container
+{
+    padding: 10px;
+    border-radius: 25px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.title
+{
+ text-align: start;
+ position: relative;
+ left: 0;
+ margin-top: 10px;
+}
+
+.sub-title
+{
+    color: #A3A3A3;
+}
+
+form
+{
+    width: 100%;
+}
+
+.form-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.login-field
+{
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+ion-item
+{
+    --background: #B4654A;
+    border-radius: 25px;
+    border-bottom: solid 7px #2A2C24;
+    color: #2A2C24;
+}
+
+.img-container
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.img-isotipo
+{
+    margin-top: 40px;
+    width: 200px;
+}
+
+.button-container
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: end;
+}
+
+ion-button
+{
+    background-color: #C59B76;
+    border-radius: 25px;
+    color: #2A2C24;
+    border-bottom: solid 7px #2A2C24;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.margin
+{
+    margin: 4% 0px;
+}
