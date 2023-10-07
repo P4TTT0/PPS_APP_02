@@ -1,20 +1,45 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="nav-bar">
+    <img style="width: 40px;" src="./../../assets/Isotipo_Black_NoBCK.svg" />
+    <div class="button-container">
+      <ion-button (click)="OnLogoutClick()" expand="block" fill="clear" shape="round">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+  <div>
+    <app-buttons [folderUrl]="folderUrl" [idioma]="idioma" [audios]="audios"></app-buttons>
+    <ion-fab class="fab" slot="fixed" vertical="bottom" horizontal="end">
+      <ion-fab-button>
+        <ion-icon name="earth-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-fab-button (click)="ChangeLenguage('Portugues')">
+          <img src="./../../assets/Banderas/banderBra.png">
+        </ion-fab-button>
+        <ion-fab-button (click)="ChangeLenguage('Ingles')">
+          <img src="./../../assets/Banderas/banderEu.png">
+        </ion-fab-button>
+        <ion-fab-button (click)="ChangeLenguage('Espanol')">
+          <img src="./../../assets/Banderas/banderEsp.png">
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+    <ion-fab class="fab"style="margin-right: 90px;" slot="fixed" vertical="bottom" horizontal="end">
+      <ion-fab-button>
+        <ion-icon name="layers-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-fab-button (click)="ChangeCategory('Colores',  ['Rojo.mp3', 'Amarillo.mp3', 'Verde.mp3', 'Azul.mp3', 'Rosa.mp3'])">
+          <img src="./../../assets/Colores/1.png">
+        </ion-fab-button>
+        <ion-fab-button (click)="ChangeCategory('Animales', ['Jirafa.mp3', 'Elefante.mp3', 'Gallina.mp3', 'Pato.mp3', 'Pinguino.mp3'])">
+          <img src="./../../assets/Animales/1.png">
+        </ion-fab-button>
+        <ion-fab-button (click)="ChangeCategory('Numeros',  ['Uno.mp3', 'Dos.mp3', 'Tres.mp3', 'Cuatro.mp3', 'Cinco.mp3'] )">
+          <img src="./../../assets/Numeros/1.png">
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
   </div>
 </ion-content>

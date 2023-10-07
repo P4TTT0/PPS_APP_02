@@ -108,4 +108,14 @@ export class LoginPage implements OnInit {
     await toast.present();
   }
 
+  public OnFillFields(emailQuickAccess : string, passwordQuickAccess : string)
+  {
+    this.regForm.setValue(
+      {
+        email: emailQuickAccess,
+        password: passwordQuickAccess
+      }
+    ) 
+  }
+
 }

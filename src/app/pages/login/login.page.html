@@ -4,7 +4,17 @@
       <h1 class="title">¡Bienvenido!</h1>
       <p>¡Nunca les faltara diversion y aprendizaje!</p>
     </div>
-
+    <div class="buttons-container">
+      <ion-button (click)="OnFillFields('admin@admin.com', '111111')" expand="block" fill="clear" shape="round">
+        1 <ion-icon slot="end" name="person-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="OnFillFields('invitado@invitado.com', '222222')" expand="block" fill="clear" shape="round">
+        2 <ion-icon slot="end" name="person-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="OnFillFields('usuario@usuario.com', '333333')" expand="block" fill="clear" shape="round">
+        3 <ion-icon slot="end" name="person-outline"></ion-icon>
+      </ion-button>
+    </div>
     <div class="img-container margin">
       <img class="img-isotipo" src="./../../../assets/Isotipo_Black_NoBCK.svg" alt="login-img" />
     </div>
@@ -20,7 +30,7 @@
         </ion-item>
       </div>
       <div class="button-container margin">
-        <ion-button expand="block" fill="clear" shape="round">
+        <ion-button (click)="OnLoginClick()" expand="block" fill="clear" shape="round">
           Iniciar sesión
         </ion-button>
       </div>

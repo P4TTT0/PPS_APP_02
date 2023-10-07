@@ -69,7 +69,7 @@ form
 
 ion-item
 {
-    --background: #B4654A;
+    --background: #FAFF81;
     border-radius: 25px;
     border-bottom: solid 7px #2A2C24;
     color: #2A2C24;
@@ -98,7 +98,7 @@ ion-item
 
 ion-button
 {
-    background-color: #C59B76;
+    background-color: #FAFF81;
     border-radius: 25px;
     color: #2A2C24;
     border-bottom: solid 7px #2A2C24;
@@ -116,4 +116,9 @@ ion-button
 .margin
 {
     margin: 4% 0px;
+}
+
+.buttons-container
+{
+    display: flex;
 }
