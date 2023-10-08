@@ -12,6 +12,8 @@ export class HomePage {
   public folderUrl : string = "Colores";
   public idioma : string = "Ingles";
   public audios : string[] = ['Rojo.mp3', 'Amarillo.mp3', 'Verde.mp3', 'Azul.mp3', 'Rosa.mp3'];
+  public categorySrc = "./../../assets/Colores/1.png"
+  public lenguageSrc = "./../../assets/Banderas/Ingles.png"
 
   public player : Howl | any;
 
@@ -40,6 +42,7 @@ export class HomePage {
         src: [src]
       }
     )
+    this.categorySrc = './../../assets/' + category + '/1.png'
     this.player.play();
   }
 
@@ -52,6 +55,7 @@ export class HomePage {
         src: [src]
       }
     )
+    this.lenguageSrc = './../../assets/Banderas/' + lenguage + ".png"
     this.player.play();
   }
 

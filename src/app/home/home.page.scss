@@ -13,10 +13,22 @@ ion-content
 .nav-bar
 {
   width: 100%;
-  padding: 20px 40px;
+  padding: 5px 40px;
   background-color: #FAFF81;
   display: flex;
   justify-content: space-between;
+}
+
+.img-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img
+{
+  width: 50px;
 }
 
 .button-container

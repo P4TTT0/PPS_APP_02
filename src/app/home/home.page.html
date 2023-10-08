@@ -1,6 +1,10 @@
 <ion-content [fullscreen]="true">
   <div class="nav-bar">
     <img style="width: 40px;" src="./../../assets/Isotipo_Black_NoBCK.svg" />
+    <div class="img-container">
+      <img style="margin-right: 10px;" [src]="categorySrc">
+      <img [src]="lenguageSrc">
+    </div>
     <div class="button-container">
       <ion-button (click)="OnLogoutClick()" expand="block" fill="clear" shape="round">
         <ion-icon name="log-out-outline"></ion-icon>
@@ -15,13 +19,13 @@
       </ion-fab-button>
       <ion-fab-list side="top">
         <ion-fab-button (click)="ChangeLenguage('Portugues')">
-          <img src="./../../assets/Banderas/banderBra.png">
+          <img src="./../../assets/Banderas/Portugues.png">
         </ion-fab-button>
         <ion-fab-button (click)="ChangeLenguage('Ingles')">
-          <img src="./../../assets/Banderas/banderEu.png">
+          <img src="./../../assets/Banderas/Ingles.png">
         </ion-fab-button>
         <ion-fab-button (click)="ChangeLenguage('Espanol')">
-          <img src="./../../assets/Banderas/banderEsp.png">
+          <img src="./../../assets/Banderas/Espanol.png">
         </ion-fab-button>
       </ion-fab-list>
     </ion-fab>
