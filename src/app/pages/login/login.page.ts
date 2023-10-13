@@ -38,6 +38,7 @@ export class LoginPage implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.auth.logGuard);
   }
 
   public async OnLoginClick()

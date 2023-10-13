@@ -16,7 +16,9 @@ import { environment } from 'src/environments/environment';
   imports: 
   [
     BrowserModule, 
-    IonicModule.forRoot(), 
+    IonicModule.forRoot({
+      
+    }), 
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,

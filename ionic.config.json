@@ -1,7 +1,11 @@
 {
-  "name": "Joy",
+  "name": "Jugar",
   "integrations": {
     "capacitor": {}
   },
-  "type": "angular"
+  "type": "angular",
+  "preference":
+  {
+    "Orientation": "landscape"
+  }
 }

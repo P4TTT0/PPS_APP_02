@@ -16,6 +16,7 @@ export class ButtonsComponent  implements OnInit {
   @Input() idioma : string = 'Ingles';
   @Input() audios : string[] = [];
 
+
   playlist : Track[] = [
     {
       name: 'Audio1',
@@ -31,7 +32,8 @@ export class ButtonsComponent  implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   public playAudio(idioma : string, audio : string)
   {
@@ -44,5 +46,4 @@ export class ButtonsComponent  implements OnInit {
     this.player.play();
     console.log(src);
   }
-
 }

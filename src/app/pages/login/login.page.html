@@ -2,18 +2,7 @@
   <div class="container">
     <div class="title-container margin">
       <h1 class="title">¡Bienvenido!</h1>
-      <p>¡Nunca les faltara diversion y aprendizaje!</p>
-    </div>
-    <div class="buttons-container">
-      <ion-button (click)="OnFillFields('admin@admin.com', '111111')" expand="block" fill="clear" shape="round">
-        1 <ion-icon slot="end" name="person-outline"></ion-icon>
-      </ion-button>
-      <ion-button (click)="OnFillFields('invitado@invitado.com', '222222')" expand="block" fill="clear" shape="round">
-        2 <ion-icon slot="end" name="person-outline"></ion-icon>
-      </ion-button>
-      <ion-button (click)="OnFillFields('usuario@usuario.com', '333333')" expand="block" fill="clear" shape="round">
-        3 <ion-icon slot="end" name="person-outline"></ion-icon>
-      </ion-button>
+      <p>¡Nunca les faltará diversión y aprendizaje!</p>
     </div>
     <div class="img-container margin">
       <img class="img-isotipo" src="./../../../assets/Isotipo_Black_NoBCK.svg" alt="login-img" />
@@ -22,7 +11,7 @@
     <form [formGroup]="regForm" novalidate class="margin">
       <div class="form-container">
         <ion-item class="login-field">
-          <ion-input type="text" placeholder="E-Mail" formControlName="email"></ion-input>
+          <ion-input type="text" placeholder="Correo electrónico" formControlName="email"></ion-input>
           <ion-icon slot="end" name="person"></ion-icon>
         </ion-item>
         <ion-item class="login-field">
@@ -35,5 +24,21 @@
         </ion-button>
       </div>
     </form>
+    <ion-fab style="margin-bottom: 200px;" class="fab" slot="fixed" vertical="bottom" horizontal="end">
+      <ion-fab-button (click)="OnFillFields('admin@admin.com', '111111')">
+       <p>1</p> <ion-icon name="person-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-fab style="margin-bottom: 100px;" class="fab" slot="fixed" vertical="bottom" horizontal="end">
+      <ion-fab-button (click)="OnFillFields('invitado@invitado.com', '222222')">
+        <p>2</p> <ion-icon name="person-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-fab class="fab" slot="fixed" vertical="bottom" horizontal="end">
+      <ion-fab-button (click)="OnFillFields('usuario@usuario.com', '333333')">
+        <p>3</p> <ion-icon name="person-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
   </div>
+
 </ion-content>
